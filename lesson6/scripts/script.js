@@ -1,26 +1,25 @@
 
 //Задание 1
 
-// const cubed=(num)=> num**3;
-// console.log(`Сумма двойки в кубе и тройки в кубе равна ${cubed(2)+cubed(3)}`);
+const cubed=(num)=> num**3;
+console.log(`Сумма двойки в кубе и тройки в кубе равна ${cubed(2)+cubed(3)}`);
 
 //Задание 2
-// const calculatePercentage=(num)=> num * 0.87;
-// let userInput = prompt("Введите число:");
-// if (isNaN(userInput)) {
-//   console.log("Значение задано неверно");
-// } else {
-//   let number = parseFloat(userInput);
-//   let result = calculatePercentage(number);
-//   console.log(`Размер заработной платы за вычетом налогов равен: ${result}`);
-// }
+const calculatePercentage=(num)=> num * 0.87;
+let userInput = prompt("Введите число:");
+if (isNaN(userInput)) {
+  console.log("Значение задано неверно");
+} else {
+  let number = parseFloat(userInput);
+  let result = calculatePercentage(number);
+  console.log(`Размер заработной платы за вычетом налогов равен: ${result}`);
+}
 //Задание 3
-// const findMax=(a, b, c) => Math.max(a, b, c);
-// let num1 = parseInt(prompt("Введите первое число:"));
-// let num2 = parseInt(prompt("Введите второе число:"));
-// let num3 = parseInt(prompt("Введите третье число:"));
-
-// console.log(`Максимальное значение: ${findMax(num1, num2, num3)}`);
+const findMax=(a, b, c) => Math.max(a, b, c);
+let number1 = parseInt(prompt("Введите первое число:"));
+let number2 = parseInt(prompt("Введите второе число:"));
+let number3 = parseInt(prompt("Введите третье число:"));
+console.log(`Максимальное значение: ${findMax(number1, number2, number3)}`);
 //Задание 4
 function addition(num1, num2) {
     return num1 + num2;
