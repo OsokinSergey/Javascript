@@ -57,7 +57,7 @@ const products = [
 
 products.forEach(el=>el.price*=0.85)
 
-//Задание
+//Задание 4
 
 const products1 = [
     {
@@ -86,4 +86,27 @@ const products1 = [
     },
     ];
     
-    
+const productsWithPhotos = products1.filter(product => console.log(product.photos));
+console.log(productsWithPhotos);
+console.log(products1); 
+
+//Задание 5 Вариант 1
+
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+const week={};
+
+for(counter=0;counter<en.length;counter++){
+    week[en[counter]]=ru[counter];
+}
+console.log(week);
+ 
+//Задание 5 Вариант 2
+
+const result = en.reduce((acc, curr, index) => {
+    acc[curr] = ru[index];
+    return acc;
+  }, {});
+  
+  console.log(result);
+  
