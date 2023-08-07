@@ -38,6 +38,10 @@ const post = {
         ],
     };
 
+console.log(post.author);
+console.log(post.comments[0].rating.dislikes);
+console.log(post.comments[1].userId);
+console.log(post.comments[1].text);
 //Задание 3
 
 const products = [
@@ -85,10 +89,11 @@ const products1 = [
         price: 78,
     },
     ];
-    
-const productsWithPhotos = products1.filter(product => console.log(product.photos));
+
+const productsWithPhotos = products1.filter(product=>((product.photos)? count=product.photos.length:count=0)>0);
 console.log(productsWithPhotos);
-console.log(products1); 
+const productsSort = products1.sort((a,b)=>a.price-b.price);
+console.log(productsSort);
 
 //Задание 5 Вариант 1
 
@@ -108,5 +113,5 @@ const result = en.reduce((acc, curr, index) => {
     return acc;
   }, {});
   
-  console.log(result);
+ console.log(result);
   
